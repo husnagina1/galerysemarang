@@ -1,0 +1,238 @@
+<html>
+<head>
+	<title>gallerysemarang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+	<header class="header">
+		<table style= "margin-top:18px">
+			<tr>
+				<td align= "center"><a class="logo" href="index.html"><img class = "logo" src="img.png" width="200px" height="60px"></a></td>
+				<td><h4 style="color:white; font-family:Adobe Caslon Pro Bold">TOKO BAJU WANITA</h4></td>
+			</tr>
+		</table>
+		
+		
+	</header>
+	
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html" class="">Beranda</a></li>
+			<li><a href="kaos.html" class="">Kaos</a></li>
+			<li><a href="casual.html" class="">Casual</a></li>
+			<li><a href="blouse.html" class="">Blouse</a></li>
+			<li><a href="hubungi.html" class="">Hubungi Kami</a></li>
+			<li><a href="tentang.html" class="">Tentang Kami</a></li>
+			<li><a href="syarat.html" class="">Syarat Ketentuan</a></li>
+			<li><a href="login1.html" class="">Log In</a></li>
+		</ul>
+	</nav>
+
+	<div class="w3-content w3-display-container">
+		<a href = "kaos.html"><img class="mySlides" src="images/gambar.jpg" style = "width: 1000px ; height : 500px"></a>
+		<a href = "casual.html"><img class="mySlides" src="images/sampulcasual.jpg" style = "width: 1000px ; height : 500px"></a>
+		<a href = "blouse.html"><img class="mySlides" src="images/sabrina3.jpg" style = "width: 1000px ; height : 500px"></a>
+		
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	  
+		<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		</div>
+	</div>
+	
+	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+	</script>
+	
+	<h1 style="font-family: Georgia;text-align: center; background-color: Pink; color: white">
+		<font size=10>
+			<marquee behavior="alternate"> <Center> SEKILAS PRODUK </Center> </marquee>
+		</font>
+	</h1>
+	<br/>
+	
+	<font face="Jokerman" align="center" font size="5" background color="red"> 
+		<p align= "center">	
+			<a href="kaos.html"> PRODUK KAOS <br> </a>
+		</p>
+	</font> 
+	<table border = "1" width = "1100" bgcolor = "white" align = "center">
+		<tr>
+			<td align = "center"> 
+				<dir> 
+					<a href = "kaos1.html"><br><img src="images/LDR.jpg" style = "width:290px; height:270px"/> </a> <br><br>
+						<a href="kaos1.html"> <font face = "Georgia"> LDR T-shirt <br/> Rp 40.000 </font> </a> <br> 
+				</dir>
+			</td>
+			<td align = "center"> 
+				<dir> 
+					<a href = "kaos2.html"><br><img src="images/terserah_black.jpg" style = "width:290px; height:270px"/> </a> <br><br>
+						<a href="kaos2.html"> <font face = "Georgia"> Terserah Tumblr Tee <br/> Rp 40.000 </font> </a> <br> 
+					</dir>
+				</td>
+			<td align = "center"> 
+				<dir>
+					<a href = "kaos3.html"><br><img src="images/tumblrtee_workhardstayhumble.jpg" style = "width:290px; height:270px"/> </a> <br><br>
+						<a href="kaos3.html"> <font face = "Georgia"> Work Hard Stay Humble T-Shirt <br/> Rp 45.000 </font> </a> <br> 
+				</dir>
+			</td>
+		</tr>
+	</table>
+	
+	<font face="Jokerman" align="center" font size="5" background color="red"> 
+		<p align= "center">	
+			<a href="casual.html"> PRODUK BAJU CASUAL <br> </a>
+		</p>
+	</font> 
+	<table border = "1" width = "1100" bgcolor = "white" align = "center">
+		<tr>
+			<td align = "center"> 
+				<dir> 
+					<a href = "produkcasual1.html"><br><img src="images/casual5.jpg" style = "width:290px; height:330px"/> </a> <br><br>
+						<a href="produkcasual1.html"> <font face = "Georgia"> Lucy Outer Casual <br/> Rp 45.000 </font> </a> <br> 
+				</dir>
+			</td>
+			<td align = "center"> 
+				<dir> 
+					<a href = "produkcasual2.html"><br><img src="images/casualkerja.jpg" style = "width:290px; height:330px"/> </a> <br><br>
+						<a href="produkcasual2.html"> <font face = "Georgia"> Work Casual Verela <br/> Rp 55.000 </font> </a> <br> 
+					</dir>
+				</td>
+			<td align = "center"> 
+				<dir>
+					<a href = "produkcasual3.html"><br><img src="images/casualdress.jpg" style = "width:290px; height:330px"/> </a> <br><br>
+						<a href="produkcasual3.html"> <font face = "Georgia"> Dress Casual <br/> Rp 60.000 </font> </a> <br> 
+				</dir>
+			</td>
+		</tr>
+	</table>
+	
+	<font face="Jokerman" align="center" font size="5" background color="red"> 
+		<p align= "center">	
+			<a href="blouse.html"> PRODUK BAJU BLOUSE <br> </a>
+		</p>
+	</font> 
+	<table border = "1" width = "1100" bgcolor = "white" align = "center">
+		<tr>
+			<td align = "center"> 
+				<dir> 
+					<a href = "produkblouse1.html"><br><img src="images/blousekatun.jpg" style = "width:290px; height:330px"/> </a> <br><br>
+						<a href="produkblouse1.html"> <font face = "Georgia"> White Blouse <br/> Rp 55.000 </font> </a> <br> 
+				</dir>
+			</td>
+			<td align = "center"> 
+				<dir> 
+					<a href = "produkblouse2.html"><br><img src="images/blousekatunsifon.jpg" style = "width:290px; height:330px"/> </a> <br><br>
+						<a href="produkblouse2.html"> <font face = "Georgia"> Blouse Katun Sifon <br/> Rp 50.000 </font> </a> <br> 
+					</dir>
+				</td>
+			<td align = "center"> 
+				<dir>
+					<a href = "produkblouse3.html"><br><img src="images/blousered.jpg" style = "width:290px; height:330px"/> </a> <br><br>
+						<a href="produkblouse3.html"> <font face = "Georgia"> Red Blouse <br/> Rp 55.000 </font> </a> <br> 
+				</dir>
+			</td>
+		</tr>
+	</table>
+	<br/>
+	
+	<div class="partner">
+		<table border = "0" width = "1070" bgcolor = "pink" align ="center">
+			<tr  valign = "top">	
+				<td width="350" align = "left"> <font size = "3" color="white"> <br> <b> JASA PENGIRIMAN </b> <br>
+					<table align="left" width="300">
+						<tr>
+							<td align="left" style="width:40px"><img src="images/jne.png" width="120px" height="70px"></td>
+							<td align="left" style="width:40px"><img src="images/pos.jpg" width="120px" height="70px"></td>
+						</tr>
+						<tr>
+							<td align="left" style="width:40px"><img src="images/sicepat.jpg" width="120px" height="70px"></td>
+							<td align="left" style="width:40px"><img src="images/tiki.png" width="120px" height="70px"></td>
+						</tr>
+					</table>
+				</td>
+								
+		
+				<td width="350"> <font size = "3" color="white"> <br> <b> CUSTOMER SERVICE </b> <br>
+					<table align="left" width="300"> 
+						<tr>
+							<td align="left" style="width:70px"> <img src="images/jam.png" width="40px" height="40px">
+								<font face = "Arial"> Buka Jam 10.00 - 21.00 WIB </font>
+								</img>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="width:70px"><img src="images/wa.png" width="40px" height="40px">
+								<font face = "Arial"> 085741907474 </font>
+								</img>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="width:70px"><img src="images/Line.png" width="40px" height="40px">
+								<font face = "Arial"> @husna_ginaa </font>
+								</img>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="width:70px"><img src="images/gmail.png" width="60px" height="40px">
+								<font face = "Arial"> husnagina717@gmail.com </font>
+								</img>
+							</td>
+						</tr>
+					</table>
+				</td> 
+
+				<td width="350"> <font size = "3" color="white"> <br> <b> LOKASI </b> <br> </font>
+					Jalan Arjuna Raya <br>
+					(Belakang Kampus Udinus <br>
+					Kelurahan Pendikran kidul, Kecamatan Semarang Tengah <br>
+					Kota Semarang, Jawa Tengah <br>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<div class="footer">
+		<h5 align= "center">Copyright @ gallerysemarang 2017 <br> All Right Reserved </h5>
+	</div>
+</div>
+
+</body>
+
+</html>

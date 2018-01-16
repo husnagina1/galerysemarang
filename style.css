@@ -1,0 +1,113 @@
+.container {
+	margin:0 auto; 
+	width: 1100px;
+	height: auto;
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+.header {
+	width: 1100px;
+	float : left;
+	height :100px;
+	background-color:#ffb2e5;
+}
+
+.logo{
+	margin-left:10px;
+	margin-right: 5px
+}
+.menu {
+	background-color:#d1e0e0;
+	font-family : sans-serif;
+	font-size : 15px;
+	clear:both;
+	height :35px;
+}
+
+.content {
+	float : left;
+	width : auto;
+	height :auto;
+	padding: 20px;
+	background:#FFF;
+	clear:both;
+}
+
+.partner{
+	float : left;
+	width : auto;
+	height :auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom:5px;
+	background-color:pink;
+}
+
+.footer {
+	color :#ff30b9;
+	height : 70px;
+	clear : both;
+	background-color:white;
+	padding: 5px 5px 5px 5px;
+}
+
+
+ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+ul li{
+	position: relative;
+	float: left;
+	width: 130px;
+}
+li ul{
+	position: absolute;
+	top: 30px;
+	display: none;
+}
+li a{
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	text-align: center;
+}
+
+li a.active{
+	background-color: #00334d;
+	color: white;
+}
+
+
+li a:hover:not(.active){
+	background-color: #3d5c5c;
+	color: white;
+}
+
+li:hover ul, li.hover ul{
+display: block; 
+}
+
+a{
+	text-decoration: none;
+}
+.textWrap{
+	float: left;
+	margin-right : 30px;
+}
+
+p.isi{
+	font-family : Palatino;
+	font-size : 18px;
+	text-align : justify;
+}
+
+
+.tbformleft{
+	width:200px;
+	height:auto;
+}
